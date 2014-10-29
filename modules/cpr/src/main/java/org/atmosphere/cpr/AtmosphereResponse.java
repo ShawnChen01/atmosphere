@@ -440,11 +440,11 @@ public class AtmosphereResponse extends HttpServletResponseWrapper {
 
     @Override
     public String getCharacterEncoding() {
-        if (!delegateToNativeResponse) {
+        //if (!delegateToNativeResponse) {
             return charSet;
-        } else {
-            return _r().getCharacterEncoding() == null ? charSet : _r().getCharacterEncoding();
-        }
+        //} else {
+        //    return _r().getCharacterEncoding() == null ? charSet : _r().getCharacterEncoding();
+        //}
     }
 
     /**
